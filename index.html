@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pierre Brosse</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/syp0awk.css">
+
+</head>
+
+<body>
+    <div class="top-image">
+        <img src="Montain.jpg" alt="Bannière Portfolio">
+        <div1 id="text" data-text="Pierre Brosse">Pierre Brosse</div1>
+        <script type="text/javascript">
+            var text = document.getElementById('text')
+            var shadow = '';
+            for(var i = 0; i < 30; i++)
+            {
+                shadow +=(shadow? ',':'')+ -i*1+'px '+ i*1+'px 0 #d9d9d9'
+            }
+            text.style.textShadow = shadow;
+        </script>
+        
+    </div>
+    
+    <header class="navbar">
+        <div class="logo">PB</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#compétences">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#stages">Stages</a></li>
+                <li><a href="#cv">CV et Compétences</a></li>
+                <li><a href="#veille">Veille Technologique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>À propos de moi</h2>
+            
+            <div class="tabs">
+                <button class="tab-button active" data-tab="presentation">Présentation</button>
+                <button class="tab-button" data-tab="langues">Langues</button>
+                <button class="tab-button" data-tab="soft-skills">Soft skills</button>
+                <button class="tab-button" data-tab="passions">Passions</button>
+            </div>
+        
+            
+            <div class="tab-content" id="presentation">
+                <p>Actuellement en BTS SIO option SLAM (Développeur Informatique), je suis un jeune étudiant qui aime l'Informatique et qui aime découvrir de nouvelles choses tous les jours. Je suis passionnée de cinéma, de voyage et de photographie. L'un de mes plus grands rêves serait de faire un tour du monde et de pouvoir capturer un moment de chaque pays, et d'en faire un album photo de chaque pays.</p>
+            </div>
+            <div class="tab-content" id="langues" style="display: none;">
+                <div class="language-section">
+                    <div class="language-item">
+                        <img src="FR.png" alt="Drapeau Français">
+                        <h4>Français</h4>
+                        <p>Langue Maternelle</p>
+                    </div>
+                    <div class="language-item">
+                        <img src="UK.png" alt="Drapeau Anglais">
+                        <h4>Anglais</h4>
+                        <p>Niveau - TOEIC ?</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab-content" id="soft-skills" style="display: none;">
+                <p>Mes soft skills incluent une grande capacité d'adaptation, me permettant de m'intégrer rapidement dans des environnements variés et de relever des défis avec sérénité. Je fais preuve d'une excellente communication, essentielle pour collaborer efficacement en équipe et transmettre mes idées de manière claire. Enfin, mon esprit analytique et ma gestion du stress me permettent de résoudre les problèmes avec calme, même dans des situations de stress.</p>
+            </div>
+            <div class="tab-content" id="passions" style="display: none;">
+                <p>Je suis passionné par la musique, les jeux vidéo, les voyage et le cinéma tout ca regroupe les choses qui me font vibrer dans la vie.</p>
+            </div>
+            <section id="compétences">
+                <h2>Compétences</h2>
+                <div class="competences-container">
+                    <div class="competence">
+                        <h3>Web / mobile </h3>
+                        <ul>
+                            <li>HTML / CSS / JS</li>
+                            <li>PHP</li>
+                            <li>Angular</li>
+                            <li>Symfony</li>
+                            <li>WordPress</li>
+                            <li>Android Studio</li>
+                        </ul>
+                    </div>
+                    <div class="competence">
+                        <h3>Base de données</h3>
+                        <ul>
+                            <li>MySQL</li>  
+                        </ul>
+                    </div>
+                </div>
+            </section>            
+        
+
+            <section id="projets">
+                <h2>Mes Projets</h2>
+                <div class="grid-container">
+                    <a href="projet1.html" class="grid-item">
+                        <h3>Projet python</h3>
+                        <p>Lors de ma première année de BTS SIO, j'ai travaillé en binôme sur le développement d'un outil en Python destiné à automatiser la création de bases de données personnalisées pour les utilisateurs d'une entreprise. Ce projet, réalisé sur une semaine, consistait à extraire les utilisateurs depuis Active Directory, à générer automatiquement les scripts SQL nécessaires (CREATE et DROP) et à les exécuter sur un serveur MariaDB.</p>
+                    </a>
+                    <a href="projet2.html" class="grid-item">
+                        <h3>Projet Intranet</h3>
+                        <p>Le projet consiste à concevoir et développer un intranet pour l’entreprise Lors de ma première année de BTS SIO, j’ai participé dans une équipe de 3 au développement d’un intranet d’entreprise pour Corpany. Ce projet visait à centraliser les informations et à améliorer la collaboration interne de l’entreprise grâce à une plateforme numérique complète reposant sur une base de données MariaDB.</p>
+                    </a>
+                    <a href="projet3.html" class="grid-item">
+                        <h3>Projet Android</h3>
+                        <p>Dans le cadre de ma deuxième année de BTS SIO, j'ai contribué, au sein d'une équipe de trois personnes, à la conception d'une application Android de réservation de restaurants. Complémentaire au site web R3st0.fr (réalisé lors d'un projet précédent), cette application permet aux utilisateurs de consulter la liste des restaurants, d'accéder aux informations détaillées et de réserver une table directement depuis leur smartphone.</p>
+                    </a>
+                    <a href="projet4.html" class="grid-item">
+                        <h3>Projet Modérateur</h3>
+                        <p>Lors de ma deuxième année de BTS SIO, j'ai participé, au sein d'une équipe de trois personnes, à la création d'une application de modération des avis pour le site R3st0.fr. Destinée aux modérateurs et au responsable du site, cette application permet d'afficher les avis publiés, de les filtrer, ainsi que de masquer, démasquer ou supprimer ceux jugés inappropriés ou non conformes</p>
+                    </a>
+                    <a href="projet5.html" class="grid-item">
+                        <h3>Projet Site Resto</h3>
+                        <p>Lors de ma deuxième année de BTS SIO, j’ai contribué à l’amélioration d’une première version du site R3st0.fr, au sein d’une équipe de trois personnes. S’inspirant de plateformes telles que TripAdvisor, ce site propose une base de données complète de restaurants ainsi que les avis des utilisateurs, afin de faciliter le choix des consommateurs.</p>
+                    </a>
+                    <a href="projet6.html" class="grid-item">
+                        <h3>Projet java</h3>
+                        <p>Pendant ma première année, j’ai participé par groupe de 4 au développement de l’application INFOWARE-SIRH, un logiciel destiné à la gestion des ressources humaines pour l’entreprise INFOWARE, spécialisée dans la distribution de matériel informatique. Ce projet avait pour objectif principal de créer une application de gestion des salariés reposant sur une base de données MariaDB existante.</p>
+                    </a>
+                </div>
+            </section>            
+            
+
+        <section id="stages">
+            <h2>Stages</h2>
+            <article>
+                <h3>Stage chez West ID</h3>
+                <p>Lors de mon stage de première année de BTS SIO au sein de l’entreprise West ID, j’ai effectué un projet de 4 semaines visant à concevoir une interface web de gestion documentaire. Cette interface permettait de centraliser les documents officiels (passeport, carte d’identité) afin de faciliter la validation des dossiers des guides de groupe.
+
+                    
+                    Dans le cadre de ce projet, j’ai dû traiter une demande spécifique de l’entreprise, en analysant ses besoins pour concevoir une solution adaptée. J’ai planifié les différentes étapes de développement (conception, création de base de données, intégration, tests), et mis en place un système de sauvegarde des données pour garantir leur intégrité. Enfin, j’ai su mettre en place mon environnement de travail en installant et configurant les outils nécessaires à mon développement personnel (éditeur de code, gestionnaire de versions, serveur local).</p>
+                    <p> Vous pouvez le consulter ici : <a href='https://github.com/DevTeamWestId/Printemps'>https://github.com/DevTeamWestId/Printemps</a></p>
+                </article>
+            <article>
+                <h3>Stage chez DATA GROWB'</h3>
+                <p>Dans le cadre de mon stage de deuxième année de BTS SIO, j’ai intégré l’entreprise Data Growb, et plus précisément sa branche Green Twins, pour une durée de 6 semaines. Ma mission principale a été la conception et le développement d’un dashboard interactif permettant de lire, analyser et visualiser des données sous forme de graphiques. Ce tableau de bord, développé en HTML, CSS, JavaScript et React, avait pour objectif de faciliter la prise de décision à partir des données collectées.
+
+                    J’ai su traiter les demandes exprimées par l’équipe métier, planifier l’ensemble des activités liées au projet (réunions, développement, tests), et déployer le service en environnement local pour validation. Ce stage m’a également permis de mettre en place un environnement d’apprentissage personnel, en me formant à React et aux bibliothèques de visualisation de données nécessaires au projet.</p>
+            </article>
+            <p style="text-align: center;">
+                <img src="Capture d'écran 2025-04-29 021117.png" alt="Capture écran projet intranet 2" style="max-width: 500px; width: 100%; border: 10px solid #ddd; margin: 20px;">
+            </p>
+            <div class="cv-container">
+                <iframe src="Brosse_Pierre_2SLAM_2025_Stage_2_Rapport.pdf" width="50%" height="1000px" style="border: 10px solid #ddd;"></iframe>
+            </div>
+        </section>
+
+        <section id="cv">
+            <h2>CV et Compétences</h2>
+            <div class="cv-container">
+                <iframe src="CV Brosse_Pierre.pdf" width="50%" height="1000px" style="border: 10px solid #ddd;"></iframe>
+            </div>
+            <p style="text-align: center;">
+                <a href="CV Brosse_Pierre.pdf" target="_blank" style="color: #007BFF; text-decoration: none;">Télécharger mon CV</a>
+                <br>
+                <a href="Tableau_Synthèse_Brosse_Pierre _BTS_SIO_2024.pdf" target="_blank" style="color: #007BFF; text-decoration: none;">Télécharger mon tableau de compétences</a>
+            </p>
+        </section>
+
+        <section id="veille">
+            <h2>Veille Technologique</h2>
+            <p>
+                La veille technologique est un processus stratégique qui consiste à surveiller de manière active les innovations, 
+                les tendances et les évolutions dans un domaine technologique donné. Elle permet d’anticiper les changements, 
+                d’identifier les opportunités et de rester compétitif en adoptant rapidement les nouvelles technologies ou méthodes. 
+                C'est un outil essentiel pour les entreprises et les professionnels, leur permettant de s'adapter aux transformations 
+                du marché et de développer des solutions toujours plus innovantes. Pour plus de détails, veuillez cliquer 
+                <a href="VeilleTechnologique.html" style="color: #007BFF; text-decoration: underline;">ici</a>.
+            </p>
+        
+            <!-- Grille d'articles -->
+            <div class="veille-grid">
+                <!-- Article 1 -->
+                <div class="veille-card">
+                    <h3>Article 1 : Intelligence artificielle</h3>
+                    <p>
+                        L’intelligence artificielle « menace l’avenir des créateurs » dans la musique et l’audiovisuel, selon une étude mondiale 
+                        <a href="https://www.lemonde.fr/economie/article/2024/12/04/l-intelligence-artificielle-fera-fondre-les-revenus-des-createurs-dans-la-musique-et-l-audiovisuel_6428841_3234.html" target="_blank" style="color: #007BFF; text-decoration: underline;">Lire plus</a>.
+                    </p>
+                </div>
+        
+                <!-- Article 2 -->
+                <div class="veille-card">
+                    <h3>Article 2 : Intelligence artificielle</h3>
+                    <p>
+                        Paris se rêve en capitale d’une IA positive avec l’organisation d’un sommet international en février 2025
+                        <a href="https://www.lemonde.fr/economie/article/2024/11/30/avec-son-sommet-des-10-et-11-fevrier-paris-se-reve-en-capitale-d-une-ia-positive_6421824_3234.html" target="_blank" style="color: #007BFF; text-decoration: underline;">Lire plus</a>.
+                    </p>
+                </div>
+        
+                <!-- Article 3 -->
+                <div class="veille-card">
+                    <h3>Article 3 : L’Anssi publie un rapport sur les menaces informatiques visant la gestion de l’eau</h3>
+                    <p>
+                        Les attaquants présentent des « motivations et profils hétérogènes », en particulier des hacktivistes pro-russes et des gangs attirés par l’appât du gain. 
+                        <a href="https://incyber.org/article/anssi-publie-rapport-sur-menaces-informatiques-visant-gestion-eau/" target="_blank" style="color: #007BFF; text-decoration: underline;">Lire plus</a>.
+                    </p>
+                </div>
+        
+                <!-- Article 4 -->
+                <div class="veille-card">
+                    <h3>Article 4 : Un colosse aux pieds d’argile : le cas de la cybersécurité aux États-Unis</h3>
+                    <p>
+                        Confrontés à leur rivalité avec la Chine et à la guerre en Ukraine, les États-Unis s’attèlent à renforcer leur cybersécurité. Dans son ouvrage De la cybersécurité en Amérique. Puissance et vulnérabilité à l’ère numérique (PUF, 2024), Stéphane Traillat, maître de conférences HDR en histoire contemporaine à l’Institut Français de Géopolitique (Université Paris 8), revient sur les forces et les faiblesses de la première puissance mondiale.
+                        <a href="https://incyber.org/article/colosse-aux-pieds-dargile-cas-cybersecurite-etats-unis/" target="_blank" style="color: #007BFF; text-decoration: underline;">Lire plus</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Pierre Brosse</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
